@@ -9,13 +9,15 @@
 /* Begin PBXBuildFile section */
 		625FD2D32525A3CF002A7342 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625FD2D22525A3CF002A7342 /* AppDelegate.swift */; };
 		625FD2D52525A3CF002A7342 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625FD2D42525A3CF002A7342 /* SceneDelegate.swift */; };
-		625FD2D72525A3CF002A7342 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625FD2D62525A3CF002A7342 /* ViewController.swift */; };
 		625FD2DA2525A3CF002A7342 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 625FD2D82525A3CF002A7342 /* Main.storyboard */; };
 		625FD2DC2525A3D2002A7342 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 625FD2DB2525A3D2002A7342 /* Assets.xcassets */; };
 		625FD2DF2525A3D2002A7342 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 625FD2DD2525A3D2002A7342 /* LaunchScreen.storyboard */; };
 		625FD2EA2525A3D2002A7342 /* DiffableDataSourceDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625FD2E92525A3D2002A7342 /* DiffableDataSourceDemoTests.swift */; };
 		625FD2F52525A3D2002A7342 /* DiffableDataSourceDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625FD2F42525A3D2002A7342 /* DiffableDataSourceDemoUITests.swift */; };
 		625FD3142525A50F002A7342 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625FD3132525A50F002A7342 /* Color.swift */; };
+		625FD3232525A600002A7342 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625FD3222525A600002A7342 /* TableViewController.swift */; };
+		625FD32B2525A60D002A7342 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625FD32A2525A60D002A7342 /* CollectionViewController.swift */; };
+		625FD3302525A657002A7342 /* ColorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625FD32F2525A657002A7342 /* ColorController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +41,6 @@
 		625FD2CF2525A3CF002A7342 /* DiffableDataSourceDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiffableDataSourceDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		625FD2D22525A3CF002A7342 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		625FD2D42525A3CF002A7342 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		625FD2D62525A3CF002A7342 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		625FD2D92525A3CF002A7342 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		625FD2DB2525A3D2002A7342 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		625FD2DE2525A3D2002A7342 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +52,9 @@
 		625FD2F42525A3D2002A7342 /* DiffableDataSourceDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiffableDataSourceDemoUITests.swift; sourceTree = "<group>"; };
 		625FD2F62525A3D2002A7342 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		625FD3132525A50F002A7342 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		625FD3222525A600002A7342 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		625FD32A2525A60D002A7342 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		625FD32F2525A657002A7342 /* ColorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				625FD3182525A514002A7342 /* Model */,
+				625FD3342525A65D002A7342 /* ModelControllers */,
 				625FD30F2525A47F002A7342 /* Views */,
 				625FD3082525A472002A7342 /* Resources */,
 			);
@@ -141,7 +146,8 @@
 		625FD30F2525A47F002A7342 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				625FD2D62525A3CF002A7342 /* ViewController.swift */,
+				625FD32A2525A60D002A7342 /* CollectionViewController.swift */,
+				625FD3222525A600002A7342 /* TableViewController.swift */,
 				625FD2D82525A3CF002A7342 /* Main.storyboard */,
 			);
 			path = Views;
@@ -153,6 +159,14 @@
 				625FD3132525A50F002A7342 /* Color.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		625FD3342525A65D002A7342 /* ModelControllers */ = {
+			isa = PBXGroup;
+			children = (
+				625FD32F2525A657002A7342 /* ColorController.swift */,
+			);
+			path = ModelControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -285,10 +299,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				625FD2D72525A3CF002A7342 /* ViewController.swift in Sources */,
 				625FD3142525A50F002A7342 /* Color.swift in Sources */,
+				625FD3302525A657002A7342 /* ColorController.swift in Sources */,
 				625FD2D32525A3CF002A7342 /* AppDelegate.swift in Sources */,
 				625FD2D52525A3CF002A7342 /* SceneDelegate.swift in Sources */,
+				625FD3232525A600002A7342 /* TableViewController.swift in Sources */,
+				625FD32B2525A60D002A7342 /* CollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -466,7 +482,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H8C27D6HU3;
-				INFOPLIST_FILE = DiffableDataSourceDemo/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/DiffableDataSourceDemo/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -485,7 +501,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H8C27D6HU3;
-				INFOPLIST_FILE = DiffableDataSourceDemo/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/DiffableDataSourceDemo/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

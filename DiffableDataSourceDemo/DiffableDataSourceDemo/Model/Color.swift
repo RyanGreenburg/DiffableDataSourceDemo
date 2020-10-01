@@ -9,12 +9,12 @@ import UIKit
 
 struct Color: Hashable {
     let name: String
-    let color: UIColor
+    let shade: UIColor
     let id: String
     
-    init(color: UIColor) {
-        name = String(color.description)
-        self.color = color
+    init(color: UIColor, name: String) {
+        self.name = name
+        shade = color
         id = UUID().uuidString
     }
 }

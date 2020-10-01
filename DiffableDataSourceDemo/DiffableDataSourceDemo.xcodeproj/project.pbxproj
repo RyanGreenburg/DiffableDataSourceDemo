@@ -15,6 +15,7 @@
 		625FD2DF2525A3D2002A7342 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 625FD2DD2525A3D2002A7342 /* LaunchScreen.storyboard */; };
 		625FD2EA2525A3D2002A7342 /* DiffableDataSourceDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625FD2E92525A3D2002A7342 /* DiffableDataSourceDemoTests.swift */; };
 		625FD2F52525A3D2002A7342 /* DiffableDataSourceDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625FD2F42525A3D2002A7342 /* DiffableDataSourceDemoUITests.swift */; };
+		625FD3142525A50F002A7342 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625FD3132525A50F002A7342 /* Color.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		625FD2F02525A3D2002A7342 /* DiffableDataSourceDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DiffableDataSourceDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		625FD2F42525A3D2002A7342 /* DiffableDataSourceDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiffableDataSourceDemoUITests.swift; sourceTree = "<group>"; };
 		625FD2F62525A3D2002A7342 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		625FD3132525A50F002A7342 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +101,9 @@
 		625FD2D12525A3CF002A7342 /* DiffableDataSourceDemo */ = {
 			isa = PBXGroup;
 			children = (
-				625FD2D22525A3CF002A7342 /* AppDelegate.swift */,
-				625FD2D42525A3CF002A7342 /* SceneDelegate.swift */,
-				625FD2D62525A3CF002A7342 /* ViewController.swift */,
-				625FD2D82525A3CF002A7342 /* Main.storyboard */,
-				625FD2DB2525A3D2002A7342 /* Assets.xcassets */,
-				625FD2DD2525A3D2002A7342 /* LaunchScreen.storyboard */,
-				625FD2E02525A3D2002A7342 /* Info.plist */,
+				625FD3182525A514002A7342 /* Model */,
+				625FD30F2525A47F002A7342 /* Views */,
+				625FD3082525A472002A7342 /* Resources */,
 			);
 			path = DiffableDataSourceDemo;
 			sourceTree = "<group>";
@@ -126,6 +124,35 @@
 				625FD2F62525A3D2002A7342 /* Info.plist */,
 			);
 			path = DiffableDataSourceDemoUITests;
+			sourceTree = "<group>";
+		};
+		625FD3082525A472002A7342 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				625FD2D22525A3CF002A7342 /* AppDelegate.swift */,
+				625FD2D42525A3CF002A7342 /* SceneDelegate.swift */,
+				625FD2DB2525A3D2002A7342 /* Assets.xcassets */,
+				625FD2DD2525A3D2002A7342 /* LaunchScreen.storyboard */,
+				625FD2E02525A3D2002A7342 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		625FD30F2525A47F002A7342 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				625FD2D62525A3CF002A7342 /* ViewController.swift */,
+				625FD2D82525A3CF002A7342 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		625FD3182525A514002A7342 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				625FD3132525A50F002A7342 /* Color.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +286,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				625FD2D72525A3CF002A7342 /* ViewController.swift in Sources */,
+				625FD3142525A50F002A7342 /* Color.swift in Sources */,
 				625FD2D32525A3CF002A7342 /* AppDelegate.swift in Sources */,
 				625FD2D52525A3CF002A7342 /* SceneDelegate.swift in Sources */,
 			);

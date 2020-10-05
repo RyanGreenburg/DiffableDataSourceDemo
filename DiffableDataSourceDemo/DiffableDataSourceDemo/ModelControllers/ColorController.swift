@@ -12,9 +12,13 @@ struct ColorController {
         case main
     }
     
-    enum SortedSection: CaseIterable {
+    enum SortedSection: String, CaseIterable {
         case cool
         case warm
+        
+        var sectionTitle: String {
+            self.rawValue.capitalized
+        }
     }
     
     static let colors: [Color] = [ Color(color: .blue, name: "Blue", family: .cool),

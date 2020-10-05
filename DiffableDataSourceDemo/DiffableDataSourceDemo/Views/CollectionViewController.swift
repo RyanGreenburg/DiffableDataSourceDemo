@@ -14,6 +14,7 @@ class CollectionViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        collectionView.register(UINib(nibName: SectionHeaderCollectionReusableView.nibID, bundle: nil), forSupplementaryViewOfKind: SectionHeaderCollectionReusableView.nibID, withReuseIdentifier: "HeaderCell")
         dataSource = constructCollectionViewDataSource()
         collectionView.dataSource = dataSource
         collectionView.collectionViewLayout = configureCollectionViewLayot()
@@ -25,6 +26,23 @@ class CollectionViewController: UIViewController {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionViewCell", for: indexPath)
             cell.backgroundColor = color.shade
             return cell
+        }
+        
+        dataSource.supplementaryViewProvider = { (
+            collectionView: UICollectionView,
+            kind: String,
+            indexPath: IndexPath)
+            -> UICollectionReusableView? in
+            
+            guard let supplementaryView = collectionView.dequeueReusableSupplementaryView(
+                    ofKind: kind,
+                    withReuseIdentifier: "HeaderCell",
+                    for: indexPath) as? SectionHeaderCollectionReusableView else {
+                fatalError("Cannot create header view")
+            }
+            supplementaryView.headerLabel.text = ColorController.SortedSection.allCases[indexPath.section].sectionTitle
+            
+            return supplementaryView
         }
         
         return dataSource
@@ -59,6 +77,10 @@ class CollectionViewController: UIViewController {
                                       leading: 8,
                                       bottom: 0,
                                       trailing: 8)
+        let sectionHeaderSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .estimated(44))
+        let sectionHeader = NSCollectionLayoutBoundarySupplementaryItem(layoutSize: sectionHeaderSize, elementKind: SectionHeaderCollectionReusableView.nibID, alignment: .top)
+        section.boundarySupplementaryItems = [sectionHeader]
+        
         return UICollectionViewCompositionalLayout(section: section)
     }
 }

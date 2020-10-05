@@ -18,6 +18,8 @@
 		625FD3232525A600002A7342 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625FD3222525A600002A7342 /* TableViewController.swift */; };
 		625FD32B2525A60D002A7342 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625FD32A2525A60D002A7342 /* CollectionViewController.swift */; };
 		625FD3302525A657002A7342 /* ColorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625FD32F2525A657002A7342 /* ColorController.swift */; };
+		629AD9B5252B7D93001A9AD8 /* SectionHeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629AD9B4252B7D93001A9AD8 /* SectionHeaderCollectionReusableView.swift */; };
+		629AD9BD252B832E001A9AD8 /* SectionHeaderCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 629AD9BC252B832E001A9AD8 /* SectionHeaderCollectionReusableView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		625FD3222525A600002A7342 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		625FD32A2525A60D002A7342 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		625FD32F2525A657002A7342 /* ColorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorController.swift; sourceTree = "<group>"; };
+		629AD9B4252B7D93001A9AD8 /* SectionHeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderCollectionReusableView.swift; sourceTree = "<group>"; };
+		629AD9BC252B832E001A9AD8 /* SectionHeaderCollectionReusableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SectionHeaderCollectionReusableView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +151,8 @@
 			isa = PBXGroup;
 			children = (
 				625FD32A2525A60D002A7342 /* CollectionViewController.swift */,
+				629AD9B4252B7D93001A9AD8 /* SectionHeaderCollectionReusableView.swift */,
+				629AD9BC252B832E001A9AD8 /* SectionHeaderCollectionReusableView.xib */,
 				625FD3222525A600002A7342 /* TableViewController.swift */,
 				625FD2D82525A3CF002A7342 /* Main.storyboard */,
 			);
@@ -272,6 +278,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				629AD9BD252B832E001A9AD8 /* SectionHeaderCollectionReusableView.xib in Resources */,
 				625FD2DF2525A3D2002A7342 /* LaunchScreen.storyboard in Resources */,
 				625FD2DC2525A3D2002A7342 /* Assets.xcassets in Resources */,
 				625FD2DA2525A3CF002A7342 /* Main.storyboard in Resources */,
@@ -299,6 +306,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				629AD9B5252B7D93001A9AD8 /* SectionHeaderCollectionReusableView.swift in Sources */,
 				625FD3142525A50F002A7342 /* Color.swift in Sources */,
 				625FD3302525A657002A7342 /* ColorController.swift in Sources */,
 				625FD2D32525A3CF002A7342 /* AppDelegate.swift in Sources */,
